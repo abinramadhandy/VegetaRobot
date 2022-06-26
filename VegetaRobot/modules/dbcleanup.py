@@ -1,9 +1,9 @@
 from time import sleep
 
-import VegetaRobot.modules.sql.global_bans_sql as gban_sql
-import VegetaRobot.modules.sql.users_sql as user_sql
-from VegetaRobot import DEV_USERS, OWNER_ID, dispatcher
-from VegetaRobot.modules.helper_funcs.chat_status import dev_plus
+import LuffyRobot.modules.sql.global_bans_sql as gban_sql
+import LuffyRobot.modules.sql.users_sql as user_sql
+from LuffyRobot import DEV_USERS, OWNER_ID, dispatcher
+from LuffyRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (CallbackContext, CallbackQueryHandler, CommandHandler,
