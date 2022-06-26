@@ -7,9 +7,9 @@ import traceback
 from contextlib import redirect_stdout
 from telethon.sync import events
 
-from VegetaRobot import LOGGER, dispatcher
-from VegetaRobot import telethn as client
-from VegetaRobot.modules.helper_funcs.chat_status import dev_plus
+from LuffyRobot import LOGGER, dispatcher
+from LuffyRobot import telethn as client
+from LuffyRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 
