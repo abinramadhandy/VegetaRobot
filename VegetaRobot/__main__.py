@@ -8,7 +8,7 @@ from sys import argv
 from typing import Optional
 from pyrogram import filters
 
-from VegetaRobot import (
+from LuffyRobot import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
@@ -26,10 +26,10 @@ from VegetaRobot import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from VegetaRobot.modules import ALL_MODULES
-from VegetaRobot.modules.helper_funcs.chat_status import is_user_admin
-from VegetaRobot.modules.helper_funcs.misc import paginate_modules
-from VegetaRobot.modules.disable import DisableAbleCommandHandler
+from LuffyRobot.modules import ALL_MODULES
+from LuffyRobot.modules.helper_funcs.chat_status import is_user_admin
+from LuffyRobot.modules.helper_funcs.misc import paginate_modules
+from LuffyRobot.modules.disable import DisableAbleCommandHandler
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.utils.helpers import mention_html
 from telegram.error import (
@@ -81,9 +81,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """ ┗► ~~ *{}* ~~◄┛ [😉]({})
-~~ *I'm made with Saiyans blood* ~~🔥
-~ *Wanna see my commands?
-below click the help button!* ~💫
+~~ *kaizoku ouni ore wa naru🏴‍☠* ~~
+~ *mau lihat apa saja fungsinya?
+klik tombol help dibawah!* ~💫
 
 ──『*ᴛʜᴀɴᴋs  ғᴏʀ  ᴜsɪɴɢ*』
 """ 
@@ -91,8 +91,8 @@ below click the help button!* ~💫
 buttons = [
     [
         InlineKeyboardButton(
-                            text="☑ Add Vegeta To Groups ☑",
-                            url="t.me/VegetaRobot?startgroup=true"),
+                            text="☑ Add Luffy To Groups ☑",
+                            url="t.me/LuffyRobot?startgroup=true"),
                     ],
                      [
                        InlineKeyboardButton(text="SUPPORT", url="https://t.me/{SUPPORT_CHAT}"),
