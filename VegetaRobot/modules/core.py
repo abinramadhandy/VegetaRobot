@@ -1,16 +1,16 @@
-from VegetaRobot import telethn as tbot
-from VegetaRobot.events import register
+from LuffyRobot import telethn as tbot
+from LuffyRobot.events import register
 import os
 import asyncio
 import os
 import time
 
 from datetime import datetime
-from VegetaRobot import OWNER_ID, DEV_USERS
-from VegetaRobot import TEMP_DOWNLOAD_DIRECTORY as path
-from VegetaRobot import TEMP_DOWNLOAD_DIRECTORY
+from LuffyRobot import OWNER_ID, DEV_USERS
+from LuffyRobot import TEMP_DOWNLOAD_DIRECTORY as path
+from LuffyRobot import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
-water = './VegetaRobot/resources/IMG_20211227_141907_345.jpg'
+water = './LuffyRobot/resources/IMG_20211227_141907_345.jpg'
 client = tbot
 
 @register(pattern=r"^/pyupload ?(.*)")
