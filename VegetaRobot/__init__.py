@@ -117,7 +117,7 @@ if ENV:
             "Your blacklisted chats list does not contain valid BigInteger.")
 
 else:
-    from VegetaRobot.config import Development as Config
+    from LuffyRobot.config import Development as Config
     TOKEN = Config.TOKEN
 
     try:
@@ -218,7 +218,7 @@ DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
 
 # Load at end to ensure all prev variables have been set
-from VegetaRobot.modules.helper_funcs.handlers import (CustomCommandHandler,
+from LuffyRobot.modules.helper_funcs.handlers import (CustomCommandHandler,
                                                         CustomMessageHandler,
                                                         CustomRegexHandler)
 
