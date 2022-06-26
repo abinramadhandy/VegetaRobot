@@ -13,23 +13,23 @@ from telegram.ext import (
     Filters,
 )
 from telegram.utils.helpers import mention_html, escape_markdown
-from VegetaRobot import dispatcher, LOGGER, DRAGONS
-from VegetaRobot.modules.disable import DisableAbleCommandHandler
-from VegetaRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from VegetaRobot.modules.helper_funcs.chat_status import user_admin
-from VegetaRobot.modules.helper_funcs.extraction import extract_text
-from VegetaRobot.modules.helper_funcs.filters import CustomFilters
-from VegetaRobot.modules.helper_funcs.misc import build_keyboard_parser
-from VegetaRobot.modules.helper_funcs.msg_types import get_filter_type
-from VegetaRobot.modules.helper_funcs.string_handling import (
+from LuffyRobot import dispatcher, LOGGER, DRAGONS
+from LuffyRobot.modules.disable import DisableAbleCommandHandler
+from LuffyRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from LuffyRobot.modules.helper_funcs.chat_status import user_admin
+from LuffyRobot.modules.helper_funcs.extraction import extract_text
+from LuffyRobot.modules.helper_funcs.filters import CustomFilters
+from LuffyRobot.modules.helper_funcs.misc import build_keyboard_parser
+from LuffyRobot.modules.helper_funcs.msg_types import get_filter_type
+from LuffyRobot.modules.helper_funcs.string_handling import (
     split_quotes,
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
-from VegetaRobot.modules.sql import cust_filters_sql as sql
-from VegetaRobot.modules.connection import connected
-from VegetaRobot.modules.helper_funcs.alternate import send_message, typing_action
+from LuffyRobot.modules.sql import cust_filters_sql as sql
+from LuffyRobot.modules.connection import connected
+from LuffyRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 HANDLER_GROUP = 10
 
