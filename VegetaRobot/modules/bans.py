@@ -13,7 +13,7 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from VegetaRobot import (
+from LuffyRobot import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
@@ -23,9 +23,9 @@ from VegetaRobot import (
     WOLVES,
     dispatcher,
 )
-import VegetaRobot.modules.sql.users_sql as sql
-from VegetaRobot.modules.disable import DisableAbleCommandHandler
-from VegetaRobot.modules.helper_funcs.chat_status import (
+import LuffyRobot.modules.sql.users_sql as sql
+from LuffyRobot.modules.disable import DisableAbleCommandHandler
+from LuffyRobot.modules.helper_funcs.chat_status import (
     user_admin_no_reply,
     bot_admin,
     can_restrict,
@@ -37,15 +37,15 @@ from VegetaRobot.modules.helper_funcs.chat_status import (
     user_can_ban,
     can_delete,
 )
-from VegetaRobot.modules.helper_funcs.extraction import extract_user_and_text
-from VegetaRobot.modules.helper_funcs.string_handling import extract_time
-from VegetaRobot.modules.log_channel import gloggable, loggable
+from LuffyRobot.modules.helper_funcs.extraction import extract_user_and_text
+from LuffyRobot.modules.helper_funcs.string_handling import extract_time
+from LuffyRobot.modules.log_channel import gloggable, loggable
 
 
     
-UNBAN_IMG= "https://telegra.ph/file/0ac714f6c537a2570cfd3.mp4"
-BAN_IMG= "https://telegra.ph/file/35ae9ea0ae57d53b98c0f.mp4"
-SELF_KICK_IMG= "https://telegra.ph/file/f1d4f976d2e90fa40740c.mp4"
+UNBAN_IMG= "https://telegra.ph/file/3d3ae979082d07a5ba771.mp4"
+BAN_IMG= "https://telegra.ph/file/2bc1169c8d5e9152f66b0.mp4"
+SELF_KICK_IMG= "https://telegra.ph/file/413d40ce9aa914c035ac0.mp4"
 
 @run_async
 @connection_status
