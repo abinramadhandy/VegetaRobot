@@ -5,8 +5,8 @@ import textwrap
 import bs4
 import jikanpy
 import requests
-from VegetaRobot import DEV_USERS, OWNER_ID, DRAGONS, dispatcher
-from VegetaRobot.modules.disable import DisableAbleCommandHandler
+from LuffyRobot import DEV_USERS, OWNER_ID, DRAGONS, dispatcher
+from LuffyRobot.modules.disable import DisableAbleCommandHandler
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
                       Update)
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
@@ -18,9 +18,9 @@ prequel_btn = "⬅️ Prequel"
 sequel_btn = "Sequel ➡️"
 close_btn = "Close ❌"
 
-ANIME_IMG = "https://telegra.ph/file/56b16e6599af473d692f9.gif"
-MANGA_IMG = "https://telegra.ph/file/e6b1c11a9cd09a9c0e223.gif"
-CHARACTER_IMG = "https://telegra.ph/file/a355b31aa5dfe112605d2.gif"
+ANIME_IMG = "https://telegra.ph/file/f42a53b19bb1d8424422e.mp4"
+MANGA_IMG = "https://telegra.ph/file/e91c45c9f1accd8d5e726.jpg"
+CHARACTER_IMG = "https://telegra.ph/file/f78ee6491c439c43cb7be.mp4"
 
 def shorten(description, info='anilist.co'):
     msg = ""
