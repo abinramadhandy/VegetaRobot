@@ -85,19 +85,19 @@ def gban(update: Update, context: CallbackContext):
 
     if not user_id:
         message.reply_text(
-            "You don't seem to be referring to a user or the ID specified is incorrect.."
+            "Anda sepertinya tidak mengacu pada pengguna atau ID yang ditentukan tidak benar.."
         )
         return
 
     if int(user_id) in DEV_USERS:
         message.reply_text(
-            "That user is part of the Association\nI can't act against our own."
+            "Pengguna itu adalah bagian dari asosiasi \ ni tidak dapat bertindak melawan kita sendiri."
         )
         return
 
     if int(user_id) in DRAGONS:
         message.reply_text(
-            "I spy, with my little eye... a disaster! Why are you guys turning on each other?"
+            "Saya memata -matai, dengan mata kecil saya ... bencana!Mengapa kalian menyalahkan satu sama lain?"
         )
         return
 
