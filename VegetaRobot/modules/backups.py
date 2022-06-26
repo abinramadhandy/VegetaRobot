@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
-import VegetaRobot.modules.sql.notes_sql as sql
-from VegetaRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER
-from VegetaRobot.__main__ import DATA_IMPORT
-from VegetaRobot.modules.helper_funcs.chat_status import user_admin
-from VegetaRobot.modules.helper_funcs.alternate import typing_action
+import LuffyRobot.modules.sql.notes_sql as sql
+from LuffyRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER
+from LuffyRobot.__main__ import DATA_IMPORT
+from LuffyRobot.modules.helper_funcs.chat_status import user_admin
+from LuffyRobot.modules.helper_funcs.alternate import typing_action
 
-# from VegetaRobot.modules.rules import get_rules
-import VegetaRobot.modules.sql.rules_sql as rulessql
+# from LuffyRobot.modules.rules import get_rules
+import LuffyRobot.modules.sql.rules_sql as rulessql
 
-# from VegetaRobot.modules.sql import warns_sql as warnssql
-import VegetaRobot.modules.sql.blacklist_sql as blacklistsql
-from VegetaRobot.modules.sql import disable_sql as disabledsql
+# from LuffyRobot.modules.sql import warns_sql as warnssql
+import LuffyRobot.modules.sql.blacklist_sql as blacklistsql
+from LuffyRobot.modules.sql import disable_sql as disabledsql
 
-# from VegetaRobot.modules.sql import cust_filters_sql as filtersql
-# import VegetaRobot.modules.sql.welcome_sql as welcsql
-import VegetaRobot.modules.sql.locks_sql as locksql
-from VegetaRobot.modules.connection import connected
+# from LuffyRobot.modules.sql import cust_filters_sql as filtersql
+# import LuffyRobot.modules.sql.welcome_sql as welcsql
+import LuffyRobot.modules.sql.locks_sql as locksql
+from LuffyRobot.modules.connection import connected
 
 
 @run_async
