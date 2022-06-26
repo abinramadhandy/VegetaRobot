@@ -2,8 +2,8 @@ from geopy.geocoders import Nominatim
 from telegram import Location, ParseMode
 from telegram.ext import CommandHandler, run_async
 
-from VegetaRobot import dispatcher
-from VegetaRobot.modules.helper_funcs.chat_status import user_admin
+from LuffyRobot import dispatcher
+from LuffyRobot.modules.helper_funcs.chat_status import user_admin
 
 GMAPS_LOC = "https://maps.googleapis.com/maps/api/geocode/json"
 
