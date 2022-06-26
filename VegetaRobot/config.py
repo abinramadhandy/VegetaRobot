@@ -4,7 +4,7 @@ import os
 
 
 def get_user_list(config, key):
-    with open('{}/VegetaRobot/{}'.format(os.getcwd(), config),
+    with open('{}/LuffyRobot/{}'.format(os.getcwd(), config),
               'r') as json_file:
         return json.load(json_file)[key]
 
@@ -15,16 +15,16 @@ class Config(object):
     # REQUIRED
     #Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = 7126006  # integer value, dont use ""
-    API_HASH = "f92b05be529835381859ead64a195fa2"
-    TOKEN = "2128359921:AAFo-u0Y0e3ZNh2JScMGYoe9oy2UBQuur_4"  #This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = 1491497760  # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    OWNER_USERNAME = "ctzfamily"
-    SUPPORT_CHAT = 'vegetasupport'  #Your own group for support, do not add the @
-    UPDATES_CHANNEL = 'vegetaUpdates' #Your own channel for Updates of bot, Do not add @
-    JOIN_LOGGER = -1001543354286  #Prints any new group the bot is added to, prints just the name and ID.
+    API_ID = 10206770  # integer value, dont use ""
+    API_HASH = "b06187ed06bf10b7c386bc3f7b25a4ee"
+    TOKEN = "5405005909:AAFp_wbI_UFp14yubqeexfKr9K-QpyUAJso"  #This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    OWNER_ID = 1338177846  # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    OWNER_USERNAME = "itsabin"
+    SUPPORT_CHAT = 'familynoe'  #Your own group for support, do not add the @
+    UPDATES_CHANNEL = 'dailyabinnn' #Your own channel for Updates of bot, Do not add @
+    JOIN_LOGGER = -1001532254724  #Prints any new group the bot is added to, prints just the name and ID.
     REM_BG_API_KEY = "dxsh728mZMDmj4ijSZCNPZig"
-    STRING_SESSION = "1BVtsOIgBu2dMF7FyBJZOig7ITZDtkaJQ-9y2i_kNIP_zTcUQ5-QG-yl04x5jbZgsnIF1n8mVg8WVQbMZB8Hi5edGcQUy8NM9QXj5IILEeIHtEBs_dFMcZ0z-wKEZ4iL2tvbNyQOIqWAYGjnsR3c_-qmZCn3gnEjOWWN9HxLe3_6C7JVw2rhuVQVAR4dWWtVEjxWmnvUL32Dlp45STq92rBbzHyHhEUOMb6CJUKh7-b-1yS8vi7Yc_7KkL2ls8QFGg1s7i-paDZqZFnJrN0IyLj5WK01ZirX62Mqw7z9Ii58CETCQutPBU29Kwyp28vtvNjegZcANwgqZZN38vJ0G9TzwJTSX920="
+    STRING_SESSION = "1BVtsOIgBuxWfwyF0MDGMRgTVY8F5bg5bChPE3wB1wZ7D9yFXL8gPg8IlxAyFDYqvQ76Z078bc34MXUEQ_M0ym4T_FvFP5g7suUt3dVNkO2lPapQODZnNoLXUn8kCO2Hqv63mp_F-7lR2xsZDp-uY_8x25gNe8OA97CN_sNaBDBdSbYU3hYkpoQwQu1upP3ou_6yafsvRxECdJt6LnxuO2rVPw6mdf6AKay9mDutbfq0Vc4CymmTnz4TPuUX9C0EHuxwA8rp06j4P9du_LBzUS2YiLWMO_q0PkuFDQ8AR72arl7C3TkFFGk1BP4l2yucscfvD2kXDMsPCTB3rG_Gfy2DSNnMMDDA="
     TEMP_DOWNLOAD_DIRECTORY = ""
     EVENT_LOGS = -1001543354286  #Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
     SQLALCHEMY_DATABASE_URI = ''"
@@ -35,7 +35,7 @@ class Config(object):
     URL = None
     SPAMWATCH_API = ""  # go to support.spamwat.ch to get key -
     SPAMWATCH_SUPPORT_CHAT = "@SpamWatchSupport"
-    BOT_ID = "2128359921"
+    BOT_ID = "5405005909"
     
     DRAGONS = get_user_list('elevated_users.json', 'sudos')
 
@@ -55,7 +55,7 @@ class Config(object):
     BAN_STICKER = ''  # banhammer marie sticker id, the bot will send this sticker before banning or kicking a user in chat.
     ALLOW_EXCL = True  # Allow ! commands as well as / (Leave this to true so that blacklist can work)
     ARQ_API_URL = "http://thearq.tech/"
-    ARQ_API_KEY = "FEUAAQ-IYDNKK-VTYUKD-LMMXLA-ARQ"
+    ARQ_API_KEY = "HMHMJX-FWNZXS-UZFXHP-FSDJXU-ARQ"
     CASH_API_KEY = 'awoo'  # Get your API key from https://www.alphavantage.co/support/#api-key
     TIME_API_KEY = 'awoo'  # Get your API key from https://timezonedb.com/api
     OPENWEATHERMAP_ID = 'awoo'
