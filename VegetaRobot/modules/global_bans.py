@@ -14,9 +14,9 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import VegetaRobot.modules.sql.global_bans_sql as sql
-from VegetaRobot.modules.sql.users_sql import get_user_com_chats
-from VegetaRobot import (
+import LuffyRobot.modules.sql.global_bans_sql as sql
+from LuffyRobot.modules.sql.users_sql import get_user_com_chats
+from LuffyRobot import (
     DEV_USERS,
     OWNER_ID,
     STRICT_GBAN,
@@ -30,16 +30,16 @@ from VegetaRobot import (
     sw,
     dispatcher,
 )
-from VegetaRobot.modules.helper_funcs.chat_status import (
+from LuffyRobot.modules.helper_funcs.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from VegetaRobot.modules.helper_funcs.extraction import (
+from LuffyRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from VegetaRobot.modules.helper_funcs.misc import send_to_list
+from LuffyRobot.modules.helper_funcs.misc import send_to_list
 
 GBAN_ENFORCE_GROUP = 6
 
