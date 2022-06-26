@@ -1,8 +1,8 @@
 
-from pyrogram import filters #carbon by vegeta
-from VegetaRobot import pgram as pbot
-from VegetaRobot.utils.errors import capture_err
-from VegetaRobot.utils.make_carbon import make_carbon
+from pyrogram import filters #carbon by luffy
+from LuffyRobot import pgram as pbot
+from LuffyRobot.utils.errors import capture_err
+from LuffyRobot.utils.make_carbon import make_carbon
 
 
 @pbot.on_message(filters.command("carbon"))
