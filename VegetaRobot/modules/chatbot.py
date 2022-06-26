@@ -3,7 +3,7 @@ import re
 import os
 import html
 import requests
-import VegetaRobot.modules.sql.chatbot_sql as sql
+import LuffyRobot.modules.sql.chatbot_sql as sql
 
 from time import sleep
 from telegram import ParseMode
@@ -15,10 +15,10 @@ from telegram.ext import (CallbackContext, CallbackQueryHandler, CommandHandler,
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.utils.helpers import mention_html, mention_markdown, escape_markdown
 
-from VegetaRobot.modules.helper_funcs.filters import CustomFilters
-from VegetaRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
-from VegetaRobot import dispatcher, updater, SUPPORT_CHAT
-from VegetaRobot.modules.log_channel import gloggable
+from LuffyRobot.modules.helper_funcs.filters import CustomFilters
+from LuffyRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
+from LuffyRobot import dispatcher, updater, SUPPORT_CHAT
+from LuffyRobot.modules.log_channel import gloggable
 
 @user_admin_no_reply
 @gloggable
@@ -125,7 +125,7 @@ def chatbot(update: Update, context: CallbackContext):
 
 def list_all_chats(update: Update, context: CallbackContext):
     chats = sql.get_all_kuki_chats()
-    text = "<b>Vegeta Enabled Chats</b>\n"
+    text = "<b>Luffy Enabled Chats</b>\n"
     for chat in chats:
         try:
             x = context.bot.get_chat(int(*chat))
