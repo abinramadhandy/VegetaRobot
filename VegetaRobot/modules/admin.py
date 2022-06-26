@@ -9,9 +9,9 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from VegetaRobot import DRAGONS, dispatcher
-from VegetaRobot.modules.disable import DisableAbleCommandHandler
-from VegetaRobot.modules.helper_funcs.chat_status import (bot_admin, can_pin,
+from LuffyRobot import DRAGONS, dispatcher
+from LuffyRobot.modules.disable import DisableAbleCommandHandler
+from LuffyRobot.modules.helper_funcs.chat_status import (bot_admin, can_pin,
                                                            can_promote,
                                                           user_can_pin,
                                                           user_can_changeinfo,
@@ -21,10 +21,10 @@ from VegetaRobot.modules.helper_funcs.chat_status import (bot_admin, can_pin,
                                                      
 
 
-from VegetaRobot.modules.helper_funcs.extraction import (extract_user,
+from LuffyRobot.modules.helper_funcs.extraction import (extract_user,
                                                         extract_user_and_text)
-from VegetaRobot.modules.log_channel import loggable
-from VegetaRobot.modules.helper_funcs.alternate import send_message
+from LuffyRobot.modules.log_channel import loggable
+from LuffyRobot.modules.helper_funcs.alternate import send_message
 
 
 @bot_admin
