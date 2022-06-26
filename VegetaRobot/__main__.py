@@ -84,8 +84,8 @@ PM_START_TEXT = """ ┗►  *What's Up Yoo! * ◄┛
 
 ~~ *I'm made with Saiyans blood* ~~
 
-~ *Wanna see my commands*[❗]({})
-*below click the help button!* ~
+~ *mau lihat apa aja fungsinya?*[❗]({})
+*klik tombol help dibawah ini!* ~
 
 ──『*ᴛʜᴀɴᴋs  ғᴏʀ  ᴜsɪɴɢ*』
 """ 
@@ -97,11 +97,11 @@ buttons = [
                             url="t.me/VegetaRobot?startgroup=true"),
                     ],
                      [
-                       InlineKeyboardButton(text="SUPPORT", url="https://t.me/{SUPPORT_CHAT}"),
-                       InlineKeyboardButton(text="UPDATES",  url="https://t.me/{UPDATES_CHANNEL}"),
+                       InlineKeyboardButton(text="SUPPORT", url="https://t.me/dailyabinnn"),
+                       InlineKeyboardButton(text="GROUP",  url="https://t.me/familynoe"),
                     ],
                    [
-                       InlineKeyboardButton(text="NETWORK", url="https://t.me/nandhabots"),
+                       InlineKeyboardButton(text="NETWORK", url="https://t.me/dailyabinnn"),
                        InlineKeyboardButton(text="LOGS", url="https://t.me/vegetalogs"),
                 ],[ InlineKeyboardButton(text="COMMANDS HELP", callback_data="help_back"
          ),
