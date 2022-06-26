@@ -24,7 +24,7 @@ class Config(object):
     UPDATES_CHANNEL = 'dailyabinnn' #Your own channel for Updates of bot, Do not add @
     JOIN_LOGGER = -1001532254724  #Prints any new group the bot is added to, prints just the name and ID.
     REM_BG_API_KEY = "dxsh728mZMDmj4ijSZCNPZig"
-    STRING_SESSION = "1BVtsOIgBuxWfwyF0MDGMRgTVY8F5bg5bChPE3wB1wZ7D9yFXL8gPg8IlxAyFDYqvQ76Z078bc34MXUEQ_M0ym4T_FvFP5g7suUt3dVNkO2lPapQODZnNoLXUn8kCO2Hqv63mp_F-7lR2xsZDp-uY_8x25gNe8OA97CN_sNaBDBdSbYU3hYkpoQwQu1upP3ou_6yafsvRxECdJt6LnxuO2rVPw6mdf6AKay9mDutbfq0Vc4CymmTnz4TPuUX9C0EHuxwA8rp06j4P9du_LBzUS2YiLWMO_q0PkuFDQ8AR72arl7C3TkFFGk1BP4l2yucscfvD2kXDMsPCTB3rG_Gfy2DSNnMMDDA="
+    STRING_SESSION = "1BVtsOIgBu1zJ3LFLeckPBVofkbkcuaSQiOJ0TKGWwJaMSI72UFiHIVTIqIdd5o7BSbJpr-XqGhBQ75nbE5SEWcC-C6Vki_0xl3_boVGNuvs6z4MTOTb-lLDUAi3e0Il1eICXxAmw7ytZ8eZZ5AAtbgb7ot78xvyThP91OJ2s7lr5leU64Mi0g2_AslYKFhcf-0UFrjyuMa7j-eEbebOwP7NwuFCkfjCSxOwcQj_zjW8ayORMAuNM9c_Q0u7sCYtKym5K6ipO4Yc3qnablHvTtq6qKYbgjgDn9iip2_T0zk8vPdaiEanFyzg_vo7zmh4Wlhy62B2Snt_-it6Cr1u7AoZAsKFxFVo="
     TEMP_DOWNLOAD_DIRECTORY = ""
     EVENT_LOGS = -1001543354286  #Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
     SQLALCHEMY_DATABASE_URI = ''"
