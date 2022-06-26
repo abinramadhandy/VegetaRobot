@@ -1,4 +1,4 @@
-from VegetaRobot import pgram as bot, SUPPORT_CHAT
+from LuffyRobot import pgram as bot, SUPPORT_CHAT
 from pyrogram import filters
 import random
 from datetime import datetime
@@ -6,10 +6,10 @@ from pyrogram.types import *
 
 #made by t.me/nandhaxd
 
-vegeta_img = [ "https://telegra.ph/file/03ba8fea3c3ed2b98b68a.jpg", 
-"https://telegra.ph/file/be242e647504b5b253f79.jpg",
-"https://telegra.ph/file/51323082ef6051f3a9721.jpg",
-"https://telegra.ph/file/072bc7f5f9fdf7f04acb3.jpg"]
+vegeta_img = [ "https://telegra.ph/file/62f89dd5806510b054635.jpg", 
+"https://telegra.ph/file/255aeb793773c74398a13.jpg",
+"https://telegra.ph/file/21ae855857ea1259d5895.jpg",
+"https://telegra.ph/file/6e3caf3d3a199ae15dabc.jpg"]
 
 @bot.on_message(filters.group & filters.command(["feedback","bug"]))
 async def feedback(_, m):
