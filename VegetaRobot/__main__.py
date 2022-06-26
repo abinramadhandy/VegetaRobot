@@ -8,7 +8,7 @@ from sys import argv
 from typing import Optional
 from pyrogram import filters
 
-from VegetaRobot import (
+from LuffyRobot import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
@@ -26,10 +26,10 @@ from VegetaRobot import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from VegetaRobot.modules import ALL_MODULES
-from VegetaRobot.modules.helper_funcs.chat_status import is_user_admin
-from VegetaRobot.modules.helper_funcs.misc import paginate_modules
-from VegetaRobot.modules.disable import DisableAbleCommandHandler
+from LuffyRobot.modules import ALL_MODULES
+from LuffyRobot.modules.helper_funcs.chat_status import is_user_admin
+from LuffyRobot.modules.helper_funcs.misc import paginate_modules
+from LuffyRobot.modules.disable import DisableAbleCommandHandler
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.utils.helpers import mention_html
 from telegram.error import (
@@ -81,9 +81,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """ ┗► ~~ *{}* ~~◄┛ [😉]({})
-~~ *I'm made with Saiyans blood* ~~🔥
-~ *Wanna see my commands?
-below click the help button!* ~💫
+~~Kaizoku uoni ore wa naru🏴‍☠* ~~
+~ *mau liat apa saja fungsinya?
+!klik tombol help dibawah ini?* ~💫
 
 ──『*ᴛʜᴀɴᴋs  ғᴏʀ  ᴜsɪɴɢ*』
 """ 
@@ -91,15 +91,15 @@ below click the help button!* ~💫
 buttons = [
     [
         InlineKeyboardButton(
-                            text="☑ Add Vegeta To Groups ☑",
-                            url="t.me/VegetaRobot?startgroup=true"),
+                            text="☑ Add Luffy To Groups ☑",
+                            url="t.me/MugiwaraRobot?startgroup=true"),
                     ],
                      [
-                       InlineKeyboardButton(text="SUPPORT", url="https://t.me/{SUPPORT_CHAT}"),
-                       InlineKeyboardButton(text="UPDATES",  url="https://t.me/{UPDATES_CHANNEL}"),
+                       InlineKeyboardButton(text="SUPPORT", url="https://t.me/familynoe"),
+                       InlineKeyboardButton(text="UPDATES",  url="https://t.me/dailyabinnn"),
                     ],
                    [
-                       InlineKeyboardButton(text="NETWORK", url="https://t.me/nandhabots"),
+                       InlineKeyboardButton(text="NETWORK", url="https://t.me/itsabin"),
                        InlineKeyboardButton(text="HELP", callback_data="help_back"
          ),
     ],
@@ -114,12 +114,12 @@ HELP_STRINGS = """
 
 HELP_MSG = "Click the button below to get help manu in your pm."
 DONATE_STRING = """*don't need donate I'm free for every one add your group's this my donate🙂*"""
-HELP_IMG= "https://telegra.ph/file/9d2c6e3b28afe7619856e.jpg"
-GROUPSTART_IMG= "https://telegra.ph/file/1cbafa58dda18528f9e0c.mp4"
+HELP_IMG= "https://telegra.ph/file/3b8758c2bb875beb75772.jpg"
+GROUPSTART_IMG= "https://telegra.ph/file/4bd8955f8c56063963194.jpg"
 
-VEGETA_IMG = ( "https://telegra.ph//file/a47f16c936dbbd4165399.jpg",
-               "https://telegra.ph//file/5026650d5e3f0b83c6d29.jpg",
-               "https://telegra.ph/file/561fa547f3c4940c95ddf.jpg",)       
+LUFFY_IMG = ( "https://telegra.ph/file/7aaf61103c8064fbab5f7.jpg",
+               "https://telegra.ph/file/ee82f13c0f1618984957a.jpg",
+               "https://telegra.ph/file/2b9de006af9e1cf933cfe.jpg",)       
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -132,7 +132,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("VegetaRobot.modules." + module_name)
+    imported_module = importlib.import_module("LuffyRobot.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -221,7 +221,7 @@ def start(update: Update, context: CallbackContext):
 
         else:
             first_name = update.effective_user.first_name
-            image = random.choice(VEGETA_IMG)
+            image = random.choice(LUFFY_IMG)
             update.effective_message.reply_text(PM_START_TEXT.format(first_name,image),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
@@ -230,7 +230,7 @@ def start(update: Update, context: CallbackContext):
     else:
         first_name = update.effective_user.first_name
         update.effective_message.reply_animation(
-            GROUPSTART_IMG, caption= "*hello!\n ┗► {} ◄┛,*\n*Super Saiyan here*\n*Power lavel time* : {} ".format(
+            GROUPSTART_IMG, caption= "*hello!\n ┗► {} ◄┛,*\n*Monkey d Luffy here*\n*Power lavel time* : {} ".format(
              first_name,uptime
             ),
             parse_mode=ParseMode.MARKDOWN,
@@ -374,7 +374,7 @@ def vegeta_about_callback(update, context):
     query = update.callback_query
     if query.data == "vegeta_":
         query.message.edit_text(
-            "๏ I'm *Vegeta*, a powerful group management bot built to help you manage your group easily."
+            "๏ I'm *Luffy*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
@@ -387,19 +387,19 @@ def vegeta_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="👮 ᴀᴅᴍɪɴs", callback_data="vegeta_admin"),
-                    InlineKeyboardButton(text="📓 ɴᴏᴛᴇs", callback_data="vegeta_notes"),
+                    InlineKeyboardButton(text="👮 ᴀᴅᴍɪɴs", callback_data="luffy_admin"),
+                    InlineKeyboardButton(text="📓 ɴᴏᴛᴇs", callback_data="luffy_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="💕 ᴄʜᴀɴɴᴇʟs", callback_data="vegeta_support"),
+                    InlineKeyboardButton(text="💕 ᴄʜᴀɴɴᴇʟs", callback_data="luffy_support"),
                  ],
                  [
-                    InlineKeyboardButton(text="⬅️ ʙᴀᴄᴋ", callback_data="vegeta_back"),
+                    InlineKeyboardButton(text="⬅️ ʙᴀᴄᴋ", callback_data="luffy_back"),
                  ]
                 ]
             ),
         )
-    elif query.data == "vegeta_back":
+    elif query.data == "luffy_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -407,10 +407,10 @@ def vegeta_about_callback(update, context):
                 timeout=60,
         )
 
-    elif query.data == "vegeta_admin":
+    elif query.data == "luffy_admin":
         query.message.edit_text(
             "*๏ Let's make your group bit effective now*"
-            "\nCongragulations, VegetaRobot now ready to manage your group."
+            "\nCongragulations, LuffyRobot now ready to manage your group."
             "\n\n*Admin Tools*"
             "\nBasic Admin tools help you to protect and powerup your group."
             "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -423,7 +423,7 @@ def vegeta_about_callback(update, context):
             ),
         )
 
-    elif query.data == "vegeta_notes":
+    elif query.data == "luffy_notes":
         query.message.edit_text(
             "<b>๏ Setting up notes</b>"
             "\nYou can save message/media/audio or anything as notes"
@@ -434,24 +434,24 @@ def vegeta_about_callback(update, context):
                 [[InlineKeyboardButton(text="Go Back", callback_data="vegeta_")]]
             ),
         )
-    elif query.data == "vegeta_support":
+    elif query.data == "luffy_support":
         query.message.edit_text(
-            "*๏ Vegeta support chats*"
-            "\nJoin My Support Group/Channel for see or report a problem on Vegeta.",
+            "*๏ Luffy support chats*"
+            "\nJoin My Support Group/Channel for see or report a problem on Luffy.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="t.me/Vegetasupport"),
+                    InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="t.me/dailyabinnn"),
                     InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url="https://t.me/vegetaupdates"),
                  ],
                  [
                        InlineKeyboardButton(text="ɴᴇᴛᴡᴏʀᴋ", url="t.me/XForceNetwork"),
-                       InlineKeyboardButton(text="ʟᴏɢs", url="t.me/VegetaLogs"),
+                       InlineKeyboardButton(text="ʟᴏɢs", url="t.me/LuffyLogs"),
                    
                    ],
                     [
-                     InlineKeyboardButton(text="Go Back", callback_data="vegeta_"),
+                     InlineKeyboardButton(text="Go Back", callback_data="luffy_"),
                  
                  ]
                 ]
@@ -720,7 +720,7 @@ def migrate_chats(update: Update, context: CallbackContext):
     if msg.migrate_to_chat_id:
         old_chat = update.effective_chat.id
         new_chat = msg.migrate_to_chat_id
-    elif msg.migrate_from_chat_id:
+    elif msg.migrate_from_chat_id:7
         old_chat = msg.migrate_from_chat_id
         new_chat = update.effective_chat.id
     else:
@@ -740,7 +740,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}","[SUPER SAIYAN VEGETA IS BACK](https://telegra.ph/file/d3db0babad0d1729c5f59.jpg)", parse_mode=ParseMode.MARKDOWN) 
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}","[MONKEY D LUFFY IS BACK](https://telegra.ph/file/7aaf61103c8064fbab5f7.jpg)", parse_mode=ParseMode.MARKDOWN) 
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!",
@@ -758,7 +758,7 @@ def main():
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
     about_callback_handler = CallbackQueryHandler(
-        vegeta_about_callback, pattern=r"vegeta_", run_async=True
+        vegeta_about_callback, pattern=r"luffy_", run_async=True
     )
     
     donate_handler = CommandHandler("donate", donate)
@@ -786,7 +786,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Vegeta is now alive and functioning")
+        LOGGER.info("Luffy is now alive and functioning")
         updater.start_polling(timeout=15, read_latency=4, clean=True)
 
     if len(argv) not in (1, 3, 4):
