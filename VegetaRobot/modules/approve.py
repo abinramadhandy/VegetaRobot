@@ -1,11 +1,11 @@
 import html
-from VegetaRobot.modules.disable import DisableAbleCommandHandler
-from VegetaRobot import dispatcher, DRAGONS
-from VegetaRobot.modules.helper_funcs.extraction import extract_user
+from LuffyRobot.modules.disable import DisableAbleCommandHandler
+from LuffyRobot import dispatcher, DRAGONS
+from LuffyRobot.modules.helper_funcs.extraction import extract_user
 from telegram.ext import CallbackContext, run_async, CallbackQueryHandler
-import VegetaRobot.modules.sql.approve_sql as sql
-from VegetaRobot.modules.helper_funcs.chat_status import user_admin
-from VegetaRobot.modules.log_channel import loggable
+import LuffyRobot.modules.sql.approve_sql as sql
+from LuffyRobot.modules.helper_funcs.chat_status import user_admin
+from LuffyRobot.modules.log_channel import loggable
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Update
 from telegram.utils.helpers import mention_html
 from telegram.error import BadRequest
